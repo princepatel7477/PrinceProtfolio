@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prince Patel Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Cursor -->
+
+    <div class="cursor"></div>
+
+    <!-- ========================= -->
+    <!-- Navbar -->
+    <!-- ========================= -->
+
+    <nav>
+      <h2 class="logo"></h2>
+
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#certifications">Certifications</a>
+        </li>
+
+        <li>
+          <a href="#social">Social</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- ========================= -->
+    <!-- Hero -->
+    <!-- ========================= -->
+
+    <section class="hero reveal" id="home">
+      <div class="hero-text">
+        <h3>Hello, I'm</h3>
+
+        <h1>Prince Patel</h1>
+
+        <h2 class="typing-text"></h2>
+
+        <p>
+          Passionate Full Stack Developer interested in Java, Web Development
+          and modern technologies.
+        </p>
+
+        <div class="buttons">
+          <a href="#projects" class="btn"> View Projects </a>
+
+          <a href="../protfolio/image/Resume.pdf" download="Resume.pdf" class="btn btn2">
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+
+      <div class="hero-image">
+        <img src="./image/profile.jpg" alt="Prince Patel" />
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- About -->
+    <!-- ========================= -->
+
+    <section class="about reveal" id="about">
+      <h1>About Me</h1>
+
+      <p>
+        Currently pursuing a BCA in Artificial Intelligence and Machine Learning
+        at Sam Global University, expected to graduate in December 2027.
+        Dedicated to acquiring expertise in web development, full-stack
+        development, recent efforts focused on learning Java and data structures
+        and algorithms.
+
+        <br /><br />
+
+        Contributing as a Web Developer at BCA (AI&ML) since September 2024,
+        with a focus on creating responsive and user-friendly web applications.
+        Motivated to continuously learn and grow through real-world projects and
+        collaborative team environments.
+      </p>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Skills -->
+    <!-- ========================= -->
+
+    <section class="skills reveal" id="skills">
+      <h1>Skills</h1>
+
+      <div class="skill-box">
+        <!-- Java -->
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            alt="Java"
+          />
+
+          <h2>Java</h2>
+        </div>
+
+        <!-- HTML -->
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML"
+          />
+
+          <h2>HTML</h2>
+        </div>
+
+        <!-- CSS -->
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS"
+          />
+
+          <h2>CSS</h2>
+        </div>
+
+        <!-- JavaScript -->
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+          />
+
+          <h2>JavaScript</h2>
+        </div>
+
+        <!-- React -->
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            alt="React"
+          />
+
+          <h2>React</h2>
+        </div>
+
+        <!-- GitHub -->
+
+        <div class="skill-card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            alt="GitHub"
+          />
+
+          <h2>GitHub</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Projects -->
+    <!-- ========================= -->
+
+    <section class="projects reveal" id="projects">
+      <h1>My Projects</h1>
+
+      <div class="project-container" id="projectContainer">
+        <!-- Portfolio -->
+
+        <div class="project-card">
+          <h2>Portfolio Website</h2>
+
+          <p>
+            Modern animated personal portfolio website using HTML, CSS and
+            JavaScript.
+          </p>
+
+          <a href="#home">
+            <button class="project-btn">Live Preview</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Certifications -->
+    <!-- ========================= -->
+
+    <section class="certifications reveal" id="certifications">
+      <h1>Certifications</h1>
+
+      <div class="certificate-container">
+        <!-- Certificate 1 -->
+
+        <div class="certificate-card" onclick="openCertificate('./image/c.jpg')">
+          <img src="./image/c.jpg" alt="C Programming Certificate" />
+
+          <div class="certificate-overlay">
+            <i class="fa-solid fa-eye"></i>
+
+            <span> View Certificate </span>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+
+        <div class="certificate-card" onclick="openCertificate('./image/deloitte.jpg')">
+          <img src="./image/deloitte.jpg" alt="Deloitte Certificate" />
+
+          <div class="certificate-overlay">
+            <i class="fa-solid fa-eye"></i>
+
+            <span> View Certificate </span>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+
+        <div class="certificate-card" onclick="openCertificate('./image/ibm.jpg')">
+          <img src="./image/ibm.jpg" alt="IBM Certificate" />
+
+          <div class="certificate-overlay">
+            <i class="fa-solid fa-eye"></i>
+
+            <span> View Certificate </span>
+          </div>
+        </div>
+
+        <!-- Certificate 4 -->
+
+        <div
+          class="certificate-card"
+          onclick="openCertificate('./image/microsoft.jpg')"
+        >
+          <img src="./image/microsoft.jpg" alt="Microsoft Certificate" />
+
+          <div class="certificate-overlay">
+            <i class="fa-solid fa-eye"></i>
+
+            <span> View Certificate </span>
+          </div>
+        </div>
+
+        <!-- Certificate 5 -->
+
+        <div class="certificate-card" onclick="openCertificate('./image/python.jpg')">
+          <img src="./image/python.jpg" alt="Python Certificate" />
+
+          <div class="certificate-overlay">
+            <i class="fa-solid fa-eye"></i>
+
+            <span> View Certificate </span>
+          </div>
+        </div>
+
+        <!-- Certificate 6 -->
+
+        <div
+          class="certificate-card"
+          onclick="openCertificate('./image/skilindia.jpg')"
+        >
+          <img src="./image/skilindia.jpg" alt="Skill India Certificate" />
+
+          <div class="certificate-overlay">
+            <i class="fa-solid fa-eye"></i>
+
+            <span> View Certificate </span>
+          </div>
+        </div>
+
+
+
+        <!-- Certificate 7 -->
+
+        <div
+          class="certificate-card"
+          onclick="openCertificate('./image/cyber.png')"
+        >
+          <img src="./image/cyber.png" alt="Cybe  Certificate" />
+
+          <div class="certificate-overlay">
+            <i class="fa-solid fa-eye"></i>
+
+            <span> View Certificate </span>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+
+    
+
+    <!-- ========================= -->
+    <!-- Certificate Full Screen -->
+    <!-- ========================= -->
+
+    <div class="certificate-modal" id="certificateModal">
+      <button class="close-certificate" onclick="closeCertificate()">
+        &times;
+      </button>
+
+      <img id="certificateModalImage" src="" alt="Certificate" />
+    </div>
+
+    <!-- ========================= -->
+    <!-- Social -->
+    <!-- ========================= -->
+
+    <section class="social reveal" id="social">
+      <h1>Follow Me</h1>
+
+      <div class="social-container">
+        <!-- LinkedIn -->
+
+        <a
+          href="https://www.linkedin.com/in/prince-patel-37235732a"
+          target="_blank"
+          class="social-card"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+
+          <h2>LinkedIn</h2>
+        </a>
+
+        <!-- GitHub -->
+
+        <a
+          href="https://github.com/princepatel7477"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-card"
+        >
+          <i class="fa-brands fa-github"></i>
+          <h2>GitHub</h2>
+        </a>
+
+        <!-- Instagram -->
+
+        <a
+          href="https://www.instagram.com/theprince__patel?igsh=MXZuM3Nwbmx3eGIxMw=="
+          target="_blank"
+          class="social-card"
+        >
+          <i class="fa-brands fa-instagram"></i>
+
+          <h2>Instagram</h2>
+        </a>
+
+        <!-- LeetCode -->
+
+        <a
+          href="https://leetcode.com/u/princepatel123/"
+          target="_blank"
+          class="social-card"
+        >
+          <i class="fa-solid fa-code"></i>
+
+          <h2>LeetCode</h2>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Contact -->
+    <!-- ========================= -->
+
+    <section class="contact reveal" id="contact">
+      <h1>Contact Me</h1>
+
+      <div class="contact-container">
+        <div class="form-card">
+          <i class="fa-solid fa-paper-plane"></i>
+
+          <h2>Send Message</h2>
+
+          <form action="https://formsubmit.co/pp689649@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Message"
+            />
+
+            <input type="hidden" name="_template" value="table" />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://pp689649-cmyk.github.io/Prince.Protfolio/"
+            />
+
+            <input type="text" name="name" placeholder="Your Name" required />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Gmail"
+              required
+            />
+
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Write Message"
+              required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer>
+      <p>© 2026 Prince Patel | All Rights Reserved</p>
+    </footer>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
